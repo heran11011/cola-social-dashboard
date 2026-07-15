@@ -279,7 +279,7 @@
     <div class="header-inner">
       <div>
         <h1>ColaOS 多平台数据监控</h1>
-        <p>基于已入库 SQLite 数据生成，当前页面不消耗 TikHub 请求。公开预览版，只展示业务字段，不包含原始接口响应。生成时间：2026-07-15 15:37:33</p>
+        <p>基于已入库 SQLite 数据生成，当前页面不消耗 TikHub 请求。公开预览版，只展示业务字段，不包含原始接口响应。生成时间：2026-07-15 15:46:38</p>
       </div>
       <div class="toolbar">
         <select class="select" id="sortSelect">
@@ -337,29 +337,30 @@
     </div>
   </aside>
   <main>
-    <section class="view-section" data-view="overview">
-      <div class="section-head">
-        <div>
-          <h2>业务总览</h2>
-          <p>先看整体表现，再通过左侧导航下钻到具体平台。浏览/播放只统计接口已返回的平台。</p>
+    <div class="view-section" data-view="overview">
+      <section>
+        <div class="section-head">
+          <div>
+            <h2>业务总览</h2>
+            <p>先看整体表现，再通过左侧导航下钻到具体平台。浏览/播放只统计接口已返回的平台。</p>
+          </div>
         </div>
-      </div>
-      <div class="hero-panel">
-        <div class="metric-grid">
-          <div class="metric"><strong>59</strong><span>已入库内容</span></div>
-          <div class="metric"><strong>6</strong><span>覆盖平台</span></div>
-          <div class="metric"><strong>1,696</strong><span>可计算互动</span></div>
-          <div class="metric"><strong>27,059</strong><span>可计算浏览/播放</span></div>
-          <div class="metric"><strong>26</strong><span>近 7 天发布</span></div>
+        <div class="hero-panel">
+          <div class="metric-grid">
+            <div class="metric"><strong>59</strong><span>已入库内容</span></div>
+            <div class="metric"><strong>6</strong><span>覆盖平台</span></div>
+            <div class="metric"><strong>1,696</strong><span>可计算互动</span></div>
+            <div class="metric"><strong>27,059</strong><span>可计算浏览/播放</span></div>
+            <div class="metric"><strong>26</strong><span>近 7 天发布</span></div>
+          </div>
+          <div class="insight-list">
+            <div class="insight-item"><span>适合先看</span><strong>平台表现对比、互动最高内容、最新发布内容。</strong></div>
+            <div class="insight-item"><span>数据边界</span><strong>小红书和抖音当前接口未稳定返回真实浏览/播放；微博列表接口未返回单条阅读量。</strong></div>
+            <div class="insight-item"><span>更新时间</span><strong>2026-07-15 15:46:38，页面来自本地 SQLite，不会在打开网页时重新请求 TikHub。</strong></div>
+          </div>
         </div>
-        <div class="insight-list">
-          <div class="insight-item"><span>适合先看</span><strong>平台表现对比、互动最高内容、最新发布内容。</strong></div>
-          <div class="insight-item"><span>数据边界</span><strong>小红书和抖音当前接口未稳定返回真实浏览/播放；微博列表接口未返回单条阅读量。</strong></div>
-          <div class="insight-item"><span>更新时间</span><strong>2026-07-15 15:37:33，页面来自本地 SQLite，不会在打开网页时重新请求 TikHub。</strong></div>
-        </div>
-      </div>
-    </section>
-    <section>
+      </section>
+      <section>
       <div class="section-head">
         <div>
           <h2>平台表现对比</h2>
@@ -764,7 +765,7 @@ We chose to break away from the cook...</p>
       <div class="section-head">
         <div>
           <h2>平台入口</h2>
-          <p>点击平台卡片可以快速过滤下面的详细内容表。</p>
+          <p>点击平台卡片进入对应平台页。</p>
         </div>
       </div>
       <div class="platform-grid">
@@ -840,8 +841,8 @@ We chose to break away from the cook...</p>
         <small>最新内容：3个月前</small>
       </button>
     </div>
-    </section>
-    </section>
+      </section>
+    </div>
     
             <section class="platform-section view-section hidden" id="section-xiaohongshu" data-platform-section="xiaohongshu" data-view="xiaohongshu">
               <div class="section-head">
